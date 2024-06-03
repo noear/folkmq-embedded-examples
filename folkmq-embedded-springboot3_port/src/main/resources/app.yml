@@ -1,0 +1,5 @@
+server.port: 8602
+
+#控制台账号密码
+folkmq:
+  admin: admin
