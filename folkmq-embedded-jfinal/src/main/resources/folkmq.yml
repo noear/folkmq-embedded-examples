@@ -1,0 +1,2 @@
+# 避免与其它 token 冲突
+server.session.state.jwt.name: FOLKMQ-TOKEN
