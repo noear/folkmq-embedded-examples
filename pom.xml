@@ -14,6 +14,7 @@
 
     <modules>
         <module>folkmq-embedded-solon</module>
+        <module>folkmq-embedded-jfinal</module>
         <module>folkmq-embedded-springboot2</module>
         <module>folkmq-embedded-springboot2_port</module><!-- 独立端口 -->
         <module>folkmq-embedded-springboot3</module>
