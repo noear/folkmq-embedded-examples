@@ -12,5 +12,6 @@
 | folkmq-embedded-springboot2_port | 独立端口 |
 | folkmq-embedded-springboot3      |      |
 | folkmq-embedded-springboot3_port | 独立端口 |
+| folkmq-embedded-vertx            | 独立端口 |
 
 
