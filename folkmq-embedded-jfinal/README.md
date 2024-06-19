@@ -1,5 +1,7 @@
 # folkmq-embedded-examples
-folkmq-embedded-examples
+
+
+### 示例
 
 
 | 示例                               | 说明   |
@@ -11,3 +13,8 @@ folkmq-embedded-examples
 | folkmq-embedded-springboot3      |      |
 | folkmq-embedded-springboot3_port | 独立端口 |
 
+
+### 说明
+
+* 控制台端口，随主端口
+* 消息传输端口，可配置
