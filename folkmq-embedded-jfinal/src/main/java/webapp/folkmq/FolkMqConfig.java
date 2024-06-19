@@ -45,6 +45,10 @@ public class FolkMqConfig extends Handler implements IPlugin {
             } finally {
                 ContextUtil.currentRemove();
             }
+        } else {
+            if (next != null) {
+                next.handle(target, request, response, isHandled);
+            }
         }
     }
 }
