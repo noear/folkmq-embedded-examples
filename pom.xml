@@ -19,6 +19,7 @@
         <module>folkmq-embedded-springboot2_port</module><!-- 独立端口 -->
         <module>folkmq-embedded-springboot3</module>
         <module>folkmq-embedded-springboot3_port</module><!-- 独立端口 -->
+        <module>folkmq-embedded-vertx</module><!-- 独立端口 -->
     </modules>
 
     <build>
