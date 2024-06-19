@@ -15,18 +15,21 @@ import org.springframework.context.annotation.Configuration;
 public class FolkMqConfig {
     @PostConstruct
     public void start() {
+        //启动 solon
         Solon.start(FolkMqConfig.class, new String[]{});
     }
 
     @PreDestroy
     public void stop() {
         if (Solon.app() != null) {
+            //停止 solon（根据配置，可支持两段式安全停止）
             Solon.stopBlock(false, Solon.cfg().stopDelay());
         }
     }
 
     @Bean
     public FilterRegistrationBean folkmqAdmin(){
+        //通过 Servlet Filter 实现 http 能力对接
         FilterRegistrationBean<SolonServletFilter> filter = new FilterRegistrationBean<>();
         filter.setName("SolonFilter");
         filter.addUrlPatterns("/folkmq/*");
