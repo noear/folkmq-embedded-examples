@@ -4,6 +4,8 @@ server.port: 8080
 # 避免与其它 token 冲突
 server.session.state.jwt.name: FOLKMQ-TOKEN
 
+#server.contextPath: "/demo"
+
 # 消息控制台账号密码
 folkmq.admin: admin
 # 消息传输协议（tcp 或 ws）
