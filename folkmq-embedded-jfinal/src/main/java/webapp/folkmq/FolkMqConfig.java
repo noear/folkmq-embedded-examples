@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * */
 public class FolkMqConfig extends Handler implements IPlugin {
     public boolean start() {
-        Solon.start(FolkMqConfig.class, new String[]{});
+        Solon.start(FolkMqConfig.class, new String[]{"--cfg=folkmq.yml"});
         return true;
     }
 

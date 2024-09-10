@@ -8,15 +8,20 @@ import webapp.folkmq.FolkMqConfig;
 public class HelloApp extends AbstractVerticle {
     public static void main(String[] args) {
         Vertx vertx = Vertx.vertx();
+        Router router = Router.router(vertx);
 
-        vertx.deployVerticle(new HelloApp());
+        vertx.deployVerticle(new HelloApp(router));
         vertx.deployVerticle(new FolkMqConfig());
+    }
+
+    private final Router router;
+
+    public HelloApp(Router router) {
+        this.router = router;
     }
 
     @Override
     public void start() {
-        Router router = Router.router(vertx);
-
         router.get("/").handler(req -> {
             req.response().putHeader("content-type", "text/plain")
                     .end("Hello world: " + req.request().getParam("name"));

@@ -10,7 +10,7 @@ public class FolkMqConfig extends AbstractVerticle {
 
     @Override
     public void start() {
-        Solon.start(FolkMqConfig.class, new String[]{});
+        Solon.start(FolkMqConfig.class, new String[]{"--cfg=folkmq.yml"});
     }
 
 

@@ -16,7 +16,7 @@ import javax.annotation.PreDestroy;
 public class FolkMqConfig {
     @PostConstruct
     public void start() {
-        Solon.start(FolkMqConfig.class, new String[]{});
+        Solon.start(FolkMqConfig.class, new String[]{"--cfg=folkmq.yml"});
     }
 
     @PreDestroy
